@@ -1,0 +1,16 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "side": "Server",
+    "modid": "yapper",
+    "name": "Yapper",
+    "authors": [
+        "Zynth"
+    ],
+    "contributors": [],
+    "description": "Play fun SFX at your position with chat commands",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.21.0"
+    }
+}

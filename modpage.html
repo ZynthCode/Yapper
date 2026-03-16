@@ -1,0 +1,214 @@
+<div>A <a href="https://www.vintagestory.at/">Vintage Story</a> mod that adds 16 animal sound effect commands, letting players howl, growl, bark, roar, and more using in-game creature sounds.</div>
+<h2>Features</h2>
+<div>&nbsp;</div>
+<ul>
+<li><strong>16 animal sound commands</strong> from wolves, bears, foxes, elk, chickens, and more</li>
+<li><strong>Variant system</strong> for commands with multiple animal sources (toggle between wolf/fox howls, etc.)</li>
+<li><strong>Proximity-based flavor text</strong> broadcasts to nearby players within range</li>
+<li><strong>Per-player variant persistence</strong> saved to config file across sessions</li>
+<li><strong>Cooldown system</strong> based on sound duration to prevent spam</li>
+</ul>
+<h2>Installation</h2>
+<div>&nbsp;</div>
+<ol>
+<li>Download Yapper from the releases page</li>
+<li>Place the Yapper ZIP in your Vintage Story <code>Mods</code> folder</li>
+<li>Restart the server</li>
+</ol>
+<div>&nbsp;</div>
+<h2>SFX Commands</h2>
+<div>&nbsp;</div>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 10%;"><strong>Command</strong></td>
+<td style="width: 25%;"><strong>Description</strong></td>
+<td style="width: 15%;"><strong>Flavor Text</strong></td>
+<td style="width: 10%;"><strong>Volume</strong></td>
+<td style="width: 40%;"><strong>Variants</strong></td>
+</tr>
+<tr>
+<td style="width: 10%;">/awoo</td>
+<td style="width: 25%;">Howl like a wolf!</td>
+<td style="width: 15%;">awoo'd!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;"><strong>wolf</strong> (default), fox</td>
+</tr>
+<tr>
+<td style="width: 10%;">/growl</td>
+<td style="width: 25%;">Growl like a beast!</td>
+<td style="width: 15%;">growled!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;"><strong>wolf</strong> (default), bear, fox, hyena</td>
+</tr>
+<tr>
+<td style="width: 10%;">/roar</td>
+<td style="width: 25%;">Roar like a bear!</td>
+<td style="width: 15%;">roared!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/bark</td>
+<td style="width: 25%;">Bark like a wolf!</td>
+<td style="width: 15%;">barked!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;"><strong>adult</strong> (default), pup</td>
+</tr>
+<tr>
+<td style="width: 10%;">/bellow</td>
+<td style="width: 25%;">Bellow like a mighty beast!</td>
+<td style="width: 15%;">bellowed!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;"><strong>all</strong> (default), elk, redstag</td>
+</tr>
+<tr>
+<td style="width: 10%;">/bugle</td>
+<td style="width: 25%;">Bugle like an elk!</td>
+<td style="width: 15%;">bugled!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/baa</td>
+<td style="width: 25%;">Baa like a sheep!</td>
+<td style="width: 15%;">baa'd!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/bleat</td>
+<td style="width: 25%;">Bleat like a baby animal!</td>
+<td style="width: 15%;">bleated!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/cluck</td>
+<td style="width: 25%;">Cluck like a chicken!</td>
+<td style="width: 15%;">clucked!</td>
+<td style="width: 10%;">2x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/crow</td>
+<td style="width: 25%;">Crow like a rooster!</td>
+<td style="width: 15%;">crowed!</td>
+<td style="width: 10%;">1.5x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/oink</td>
+<td style="width: 25%;">Oink like a pig!</td>
+<td style="width: 15%;">oinked!</td>
+<td style="width: 10%;">1.5x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/laugh</td>
+<td style="width: 25%;">Laugh like a hyena!</td>
+<td style="width: 15%;">laughed!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/chirp</td>
+<td style="width: 25%;">Chirp like an insect!</td>
+<td style="width: 15%;">chirped!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/peep</td>
+<td style="width: 25%;">Peep like a little bird!</td>
+<td style="width: 15%;">peeped!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/chatter</td>
+<td style="width: 25%;">Chatter like a raccoon!</td>
+<td style="width: 15%;">chattered!</td>
+<td style="width: 10%;">1x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+<tr>
+<td style="width: 10%;">/sniff</td>
+<td style="width: 25%;">Sniff around!</td>
+<td style="width: 15%;">sniffed!</td>
+<td style="width: 10%;">1.5x</td>
+<td style="width: 40%;">&ndash;</td>
+</tr>
+</tbody>
+</table>
+<div>&nbsp;</div>
+<h2>Utility Commands</h2>
+<div>&nbsp;</div>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 22%;"><strong>Command</strong></td>
+<td style="width: 78%;"><strong>Description</strong></td>
+</tr>
+<tr>
+<td style="width: 22%;">/yapper help</td>
+<td style="width: 78%;">Show available commands and usage</td>
+</tr>
+<tr>
+<td style="width: 22%;">/yapper version</td>
+<td style="width: 78%;">Show mod version</td>
+</tr>
+<tr>
+<td style="width: 22%;">/yapper config</td>
+<td style="width: 78%;">Show your current variant settings</td>
+</tr>
+<tr>
+<td style="width: 22%;">/yapper play [sound] [path]</td>
+<td style="width: 78%;">Play an arbitrary game sound (admin only)</td>
+</tr>
+</tbody>
+</table>
+<div>&nbsp;</div>
+<h2>Variant System</h2>
+<div>&nbsp;</div>
+<div>Four commands support multiple animal variants: <code>/awoo</code>, <code>/growl</code>, <code>/bark</code>, and <code>/bellow</code>. Each player can toggle between variants using the toggle subcommand.</div>
+<div>&nbsp;</div>
+<div>For example, to switch your <code>/awoo</code> from wolf to fox:</div>
+<div>&nbsp;</div>
+<div><code>/awoo toggle</code></div>
+<div>&nbsp;</div>
+<div>Each toggle cycles to the next variant in the list. Your selection is saved per-player and persists across sessions.</div>
+<div>&nbsp;</div>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 15%;"><strong>Command</strong></td>
+<td style="width: 45%;"><strong>Variants</strong></td>
+<td style="width: 40%;"><strong>Default</strong></td>
+</tr>
+<tr>
+<td style="width: 15%;">/awoo</td>
+<td style="width: 45%;">wolf, fox</td>
+<td style="width: 40%;">wolf</td>
+</tr>
+<tr>
+<td style="width: 15%;">/growl</td>
+<td style="width: 45%;">wolf, bear, fox, hyena</td>
+<td style="width: 40%;">wolf</td>
+</tr>
+<tr>
+<td style="width: 15%;">/bark</td>
+<td style="width: 45%;">adult, pup</td>
+<td style="width: 40%;">adult</td>
+</tr>
+<tr>
+<td style="width: 15%;">/bellow</td>
+<td style="width: 45%;">all, elk, redstag</td>
+<td style="width: 40%;">all</td>
+</tr>
+</tbody>
+</table>
+<div>&nbsp;</div>
+<h2>Configuration</h2>
+<div>&nbsp;</div>
+<div>Player variant preferences are stored in <code>YapperConfig.json</code> in the mod's config directory. The file maps each player's chosen variant per command and is updated automatically when players use the toggle command.</div>
