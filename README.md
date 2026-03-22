@@ -103,6 +103,8 @@ Restart Vintage Story after installing to load the new build.
 
 Use `/yapper version` to verify the mod loaded. Try the various SFX commands and use `/awoo toggle` to test variant cycling.
 
+See [DEVELOPMENT.md](DEVELOPMENT.md) for developer Q&A and additional guidance.
+
 ## MIT License
 
 See [LICENSE](LICENSE) for details.
